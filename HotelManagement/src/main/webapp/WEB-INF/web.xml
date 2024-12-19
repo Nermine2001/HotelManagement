@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <description></description>
+    <display-name>AuthenticationServlet</display-name>
+    <servlet-name>AuthenticationServlet</servlet-name>
+    <servlet-class>controllers.AuthenticationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthenticationServlet</servlet-name>
+    <url-pattern>/AuthenticationServlet</url-pattern>
+  </servlet-mapping>
+  <display-name>HotelManagement</display-name>
+  <servlet>
+    <description></description>
+    <display-name>AgentDashboardServlet</display-name>
+    <servlet-name>AgentDashboardServlet</servlet-name>
+    <servlet-class>controllers.AgentDashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AgentDashboardServlet</servlet-name>
+    <url-pattern>/agent/dashboard</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminDashboardServlet</display-name>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <servlet-class>controllers.AdminDashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <url-pattern>/admin/dashboard</url-pattern>
+  </servlet-mapping>
+ 
+
+</web-app>
